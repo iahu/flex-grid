@@ -6,10 +6,7 @@ import kebabCase from 'lodash/kebabCase'
 export default {}
 
 export const getAttrName = (cls: string, prefix?: string): string => {
-  // if (!prefix) {
-  //   return cls;
-  // }
-  return `${prefix}-${kebabCase(cls)}`
+  return [prefix, kebabCase(cls)].filter((s) => !!s).join('-')
 }
 
 interface ObjType {
