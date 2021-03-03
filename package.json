@@ -56,8 +56,7 @@
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "prettier --write --ignore-unknown",
-      "eslint --cache --fix",
-      "git add"
+      "eslint --cache --fix"
     ]
   }
 }
