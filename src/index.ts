@@ -1,5 +1,5 @@
-import Grid from './grid';
+import Grid from './grid'
 
-export { GridProps } from './interface';
+export { GridProps } from './interface'
 
-export default Grid;
+export default Grid

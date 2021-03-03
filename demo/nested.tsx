@@ -1,8 +1,8 @@
-import React from 'react';
-import Grid from '../src';
+import React from "react";
+import Grid from "../src";
 
-import '../src/es/components/grid/style/index.css';
-import './style.less';
+import "../src/es/components/grid/style/index.css";
+import "./style.less";
 
 const Base = (): JSX.Element => {
   return (

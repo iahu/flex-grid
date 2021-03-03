@@ -1,12 +1,14 @@
-import React from 'react';
-import classNames from 'classnames';
+import React from 'react'
+import classNames from 'classnames'
 
-import { GridProps } from './interface';
-import { clip, dataMap, isNumber, usePrefixCls } from './help';
+import { GridProps } from './interface'
+import { clip, dataMap, isNumber, usePrefixCls } from './helper'
 
-export { GridProps } from './interface';
+export { GridProps } from './interface'
 
-const Grid: React.FC<GridProps> = (props: React.PropsWithChildren<GridProps>) => {
+const Grid: React.FC<GridProps> = (
+  props: React.PropsWithChildren<GridProps>
+) => {
   const {
     component: Component = 'div',
     prefixCls: customizePrefixCls,
@@ -22,8 +24,8 @@ const Grid: React.FC<GridProps> = (props: React.PropsWithChildren<GridProps>) =>
     container = false,
     collapse = false,
     style,
-  } = props;
-  const prefixCls = usePrefixCls('grid', customizePrefixCls);
+  } = props
+  const prefixCls = usePrefixCls('grid', customizePrefixCls)
   const cssProps = dataMap(
     {
       direction,
@@ -35,7 +37,7 @@ const Grid: React.FC<GridProps> = (props: React.PropsWithChildren<GridProps>) =>
       wrap,
     },
     '--flex-grid'
-  );
+  )
 
   return (
     <Component
@@ -48,7 +50,7 @@ const Grid: React.FC<GridProps> = (props: React.PropsWithChildren<GridProps>) =>
     >
       {children}
     </Component>
-  );
-};
+  )
+}
 
-export default Grid;
+export default Grid

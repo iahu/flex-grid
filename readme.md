@@ -2,7 +2,6 @@
 
 a flex based grid system.
 
-
 ## how to use
 
 ```tsx
@@ -32,7 +31,6 @@ export default Base;
 ```
 
 [more exmaples](./demo)
-
 
 ## API
 
